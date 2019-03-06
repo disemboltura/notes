@@ -1,3 +1,5 @@
+upgrade python from 2.7 to 3.7
+-----------------
 > 1. 下载python3.7源码, 并解压
 > 2. 查看 README.rst 中的 build 说明. 
 > 4. 如果 ./configure 的时候没有指定安装路径, 则可执行文件 默认是安装在 /usr/local/bin中的.
