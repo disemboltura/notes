@@ -5,7 +5,7 @@ upgrade python from 2.7 to 3.7
 > 4. 如果 ./configure 的时候没有指定安装路径, 则可执行文件 默认是安装在 /usr/local/bin中的.
 
     build python with ssl:
-> 1. 去 openssl 官网下载最新的 openssl 源码, 并解压
+> 1. 去 openssl 官网下载最新的 openssl 源码( 安装python3.7版本,需要下载 1.1 之后版本的openssl), 并解压
 > 2. 根据安装的系统,查阅build 说明
 > 3. 修改 python源码中的 Setup.dist (Python-3.7.2/Modules/Setup.dist) 文件:
 >     解除一下注释:
