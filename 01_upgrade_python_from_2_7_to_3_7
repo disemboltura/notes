@@ -1,0 +1,14 @@
+> 1. 下载python3.7源码, 并解压
+> 2. 查看 README.rst 中的 build 说明. 
+> 4. 如果 ./configure 的时候没有指定安装路径, 则可执行文件 默认是安装在 /usr/local/bin中的.
+
+    build python with ssl:
+> 1. 去 openssl 官网下载最新的 openssl 源码, 并解压
+> 2. 根据安装的系统,查阅build 说明
+> 3. 修改 python源码中的 Setup.dist (Python-3.7.2/Modules/Setup.dist) 文件:
+>     解除一下注释:
+>         SSL=/usr/local/ssl
+>         _ssl _ssl.c \
+>         -DUSE_SSL -I$(SSL)/include -I$(SSL)/include/openssl \
+>         -L$(SSL)/lib -lssl -lcrypto
+> 4.重新 build python
