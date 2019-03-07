@@ -1,4 +1,4 @@
-metatable
+Metatable
 =========
 
 
@@ -36,3 +36,6 @@ table-access metamethod : __newindex metamethod
 table with default value
 ------------------------
 
+
+Weak Table
+==========
