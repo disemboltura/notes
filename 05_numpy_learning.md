@@ -28,9 +28,9 @@ numpy array 创建
 
 >     `a = np.empty( (3,4) )` # 创建3行,4列，数据都接近于 0
 
-> arrange : 按指定范围来创建数据
+> arange : 按指定范围来创建数据
 
->     `a = np.arrange(10,20 , 2)  #创建范围在10到20之间的数据 步长为2 (间隔为2)`
+>     `a = np.arange(10,20 , 2)  #创建范围在10到20之间的数据 步长为2 (间隔为2)`
 
 > linespace: 指定间隔内，返回间隔均匀的数据
 
@@ -39,6 +39,6 @@ numpy array 创建
 
 使用reshape 改变数据形状:
 -----------------------
->     `a = np.arrange(20,dtype=np.int).reshape(3,4)  #变成3行4列 `
+>     `a = np.arange(20,dtype=np.int).reshape(3,4)  #变成3行4列 `
 
 
